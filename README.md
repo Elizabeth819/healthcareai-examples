@@ -25,5 +25,3 @@ resource-group和workspace-name可以在打开模型的URL里找到.
 4. 执行图像分割notebook: /Users/wanmeng/repository/healthcareai-examples/azureml/medimageparse/medimageparse_segmentation_demo.ipynb
 5. 执行CXR报告稿生成: /Users/wanmeng/repository/healthcareai-examples/azureml/cxrreportgen/cxr-deploy-aml.ipynb
 ![image](https://github.com/user-attachments/assets/21f7cf8e-257a-43fd-bade-aed9d817a08b)
-
-
