@@ -140,6 +140,11 @@ class MedImageBaseClient(ABC):
         image = self.preprocess_image(
             image, normalization_overrides, transform_overrides
         )
+        
+        import cv2
+        image_ref_png = image_ref.rsplit('.', 1)[0] + '.png'
+        cv2.imwrite(image_ref_png, image)
+
         return image
 
     def encode_image(self, image):
