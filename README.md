@@ -18,7 +18,7 @@
 
 代码执行:
 
-0. 安装windows/ubuntu/mac版本的Azure CLI, 选择带有Powershell的windows安装程序MSI
+0. 安装windows/ubuntu/mac版本的Azure CLI, 选择带有Powershell的windows安装程序MSI  
 https://learn.microsoft.com/zh-cn/cli/azure/install-azure-cli
 ![image](https://github.com/user-attachments/assets/705017ce-0ae5-4c4d-8f46-c4fbd642946b)
 通过Azure CLI登陆到Azure账号
@@ -26,21 +26,21 @@ https://learn.microsoft.com/zh-cn/cli/azure/install-azure-cli
 az login
 ```
 
-1. 代码包安装
+1. 代码包安装  
    创建一个新的conda环境,  python>=3.9,<3.12, 推荐3.10
    执行package包的安装:   pip install -e package
    
-3. 配置环境
+3. 配置环境  
   在AML model catelog里deploy medImageParse, CXRReportGen.部署所需时间40分钟左右.
-4. 设置自己的env
+4. 设置自己的env  
 .env: MIP_MODEL_ENDPOINT格式如下: 
 Example format: "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.MachineLearningServices/workspaces/{workspace-name}/onlineEndpoints/{endpoint-name}"
-MIP_MODEL_ENDPOINT = "/subscriptions/0d3f39ba-7349-4bd7-8122-649ff18f0a4a/resourceGroups/wanmeng-healthcare/providers/Microsoft.MachineLearningServices/workspaces/wanmeng-7491/onlineEndpoints/wanmeng-7491-yyfba"
+MIP_MODEL_ENDPOINT = "/subscriptions/0d3f39ba-7349-4bd7-8122-649ff18f0a4a/resourceGroups/wanmeng-healthcare/providers/Microsoft.MachineLearningServices/workspaces/wanmeng-7491/onlineEndpoints/wanmeng-7491-yyfba"  
 resource-group和workspace-name可以在打开模型的URL里找到.
 
 5. 下载config.json, 从AML workspace首页或AI Studio的project overview首页都可以找到config的下载
    <img width="609" alt="image" src="https://github.com/user-attachments/assets/5b70e0fe-fae5-4a2d-8f5d-669afa778775" />
 
-6. 执行图像分割notebook: /Users/wanmeng/repository/healthcareai-examples/azureml/medimageparse/medimageparse_segmentation_demo.ipynb
+6. 执行图像分割notebook: /Users/wanmeng/repository/healthcareai-examples/azureml/medimageparse/medimageparse_segmentation_demo.ipynb  
 7. 执行CXR报告稿生成: /Users/wanmeng/repository/healthcareai-examples/azureml/cxrreportgen/cxr-deploy-aml.ipynb
 ![image](https://github.com/user-attachments/assets/21f7cf8e-257a-43fd-bade-aed9d817a08b)
