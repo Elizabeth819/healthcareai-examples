@@ -37,9 +37,10 @@ Example format: "/subscriptions/{subscription-id}/resourceGroups/{resource-group
 MIP_MODEL_ENDPOINT = "/subscriptions/0d3f39ba-7349-4bd7-8122-649ff18f0a4a/resourceGroups/wanmeng-healthcare/providers/Microsoft.MachineLearningServices/workspaces/wanmeng-7491/onlineEndpoints/wanmeng-7491-yyfba"  
 resource-group和workspace-name可以在打开模型的URL里找到.
 
-5. 下载config.json, 从AML workspace首页或AI Studio的project overview首页都可以找到config的下载
+5. 下载config.json, 从AML workspace首页或AI Studio的project overview首页都可以找到config的下载  
+   config放在项目根目录下面, 会在建立ml_client的时候从本地读取, 否则会与.env认证不符.  
    <img width="609" alt="image" src="https://github.com/user-attachments/assets/5b70e0fe-fae5-4a2d-8f5d-669afa778775" />
 
-6. 执行图像分割notebook: /Users/wanmeng/repository/healthcareai-examples/azureml/medimageparse/medimageparse_segmentation_demo.ipynb  
-7. 执行CXR报告稿生成: /Users/wanmeng/repository/healthcareai-examples/azureml/cxrreportgen/cxr-deploy-aml.ipynb
+7. 执行图像分割notebook: /Users/wanmeng/repository/healthcareai-examples/azureml/medimageparse/medimageparse_segmentation_demo.ipynb  
+8. 执行CXR报告稿生成: /Users/wanmeng/repository/healthcareai-examples/azureml/cxrreportgen/cxr-deploy-aml.ipynb
 ![image](https://github.com/user-attachments/assets/21f7cf8e-257a-43fd-bade-aed9d817a08b)
