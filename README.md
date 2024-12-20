@@ -18,9 +18,8 @@
 
 代码执行:
 
-0. 安装windows/ubuntu/mac版本的Azure CLI, 选择带有Powershell的windows安装程序MSI  
-https://learn.microsoft.com/zh-cn/cli/azure/install-azure-cli
-![image](https://github.com/user-attachments/assets/705017ce-0ae5-4c4d-8f46-c4fbd642946b)
+0. 安装az命令, 用于登录azure账号, 下载windows/ubuntu/mac版本的Azure CLI, 选择带有Powershell的windows安装程序MSI  
+https://learn.microsoft.com/zh-cn/cli/azure/install-azure-cli  
 通过Azure CLI登陆到Azure账号
 ```
 az login
