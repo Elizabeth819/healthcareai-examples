@@ -17,11 +17,14 @@
 ![image](https://github.com/user-attachments/assets/893bf5ab-c26a-4a24-b804-8d6dff59fd14)
 
 代码执行:
+
 0. 安装windows/ubuntu/mac版本的Azure CLI, 选择带有Powershell的windows安装程序MSI
 https://learn.microsoft.com/zh-cn/cli/azure/install-azure-cli
 ![image](https://github.com/user-attachments/assets/705017ce-0ae5-4c4d-8f46-c4fbd642946b)
 通过Azure CLI登陆到Azure账号
+```
 az login
+```
 
 1. 代码包安装
    创建一个新的conda环境,  python>=3.9,<3.12, 推荐3.10
