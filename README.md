@@ -30,7 +30,7 @@ az login
    执行package包的安装:   pip install -e package
    
 3. 配置环境  
-  在AML model catelog里deploy medImageParse, CXRReportGen.部署所需时间40分钟左右.
+  在AML model catelog里deploy medImageParse, CXRReportGen.部署所需时间40分钟左右. 
 4. 设置自己的env  
 .env: MIP_MODEL_ENDPOINT格式如下: 
 Example format: "/subscriptions/{subscription-id}/resourceGroups/{resource-group}/providers/Microsoft.MachineLearningServices/workspaces/{workspace-name}/onlineEndpoints/{endpoint-name}"
@@ -41,6 +41,8 @@ resource-group和workspace-name可以在打开模型的URL里找到.
    config放在项目根目录下面, 会在建立ml_client的时候从本地读取, 否则会与.env认证不符.  
    <img width="609" alt="image" src="https://github.com/user-attachments/assets/5b70e0fe-fae5-4a2d-8f5d-669afa778775" />
 
-7. 执行图像分割notebook: /Users/wanmeng/repository/healthcareai-examples/azureml/medimageparse/medimageparse_segmentation_demo.ipynb  
-8. 执行CXR报告稿生成: /Users/wanmeng/repository/healthcareai-examples/azureml/cxrreportgen/cxr-deploy-aml.ipynb  
+7. 执行图像分割notebook: 
+   /Users/wanmeng/repository/healthcareai-examples/azureml/medimageparse/medimageparse_segmentation_demo.ipynb  
+9. 执行CXR报告稿生成: 
+   /Users/wanmeng/repository/healthcareai-examples/azureml/cxrreportgen/cxr-deploy-aml.ipynb  
 ![image](https://github.com/user-attachments/assets/21f7cf8e-257a-43fd-bade-aed9d817a08b)
